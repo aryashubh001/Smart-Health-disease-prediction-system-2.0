@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction - HealthCare AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>HealthPredict AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#predict">Predict</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">AI-Powered Disease Prediction</h1>
+                <p class="hero-subtitle">Get instant health insights using advanced machine learning algorithms</p>
+                <button class="cta-button" onclick="scrollToPredict()">
+                    <i class="fas fa-stethoscope"></i>
+                    Start Prediction
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>24/7 Available</h3>
+                    <p>AI Health Assistant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="predict" class="prediction-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Symptom Checker</h2>
+                <p>Tell us your symptoms and get instant predictions</p>
+            </div>
+
+            <form class="prediction-form" id="predictionForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="120" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Primary Symptoms</label>
+                        <div class="symptoms-grid">
+                            <div class="symptom-item">
+                                <input type="checkbox" id="fever" name="symptoms" value="fever">
+                                <label for="fever">Fever</label>
+                            </div>
+                            <div class="symptom-item">
+                                <input type="checkbox" id="cough" name="symptoms" value="cough">
+                                <label for="cough">Cough</label>
+                            </div>
+                            <div class="symptom-item">
+                                <input type="checkbox" id="headache" name="symptoms" value="headache">
+                                <label for="headache">Headache</label>
+                            </div>
+                            <div class="symptom-item">
+                                <input type="checkbox" id="fatigue" name="symptoms" value="fatigue">
+                                <label for="fatigue">Fatigue</label>
+                            </div>
+                            <div class="symptom-item">
+                                <input type="checkbox" id="nausea" name="symptoms" value="nausea">
+                                <label for="nausea">Nausea</label>
+                            </div>
+                            <div class="symptom-item">
+                                <input type="checkbox" id="breathing" name="symptoms" value="breathing">
+                                <label for="breathing">Breathing Issues</label>
+                            </div>
+                            <div class="symptom-item">
+                                <input type="checkbox" id="chest-pain" name="symptoms" value="chest-pain">
+                                <label for="chest-pain">Chest Pain</label>
+                            </div>
+                            <div class="symptom-item">
+                                <input type="checkbox" id="stomach-pain" name="symptoms" value="stomach-pain">
+                                <label for="stomach-pain">Stomach Pain</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="description">Additional Description</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Please describe your symptoms in detail..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="predict-button">
+                    <i class="fas fa-brain"></i>
+                    Predict Disease
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results-section" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Prediction Results</h2>
+                <p>Based on your symptoms, here are the possible conditions</p>
+            </div>
+
+            <div class="results-grid" id="resultsGrid">
+                <!-- Results will be populated by JavaScript -->
+            </div>
+
+            <div class="recommendations">
+                <h3><i class="fas fa-lightbulb"></i> Recommendations</h3>
+                <ul id="recommendationsList">
+                    <!-- Recommendations will be populated by JavaScript -->
+                </ul>
+            </div>
+
+            <button class="cta-button" onclick="resetForm()">
+                <i class="fas fa-redo"></i>
+                Check Again
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About HealthPredict AI</h2>
+                    <p>Our advanced AI system analyzes your symptoms using machine learning algorithms trained on thousands of medical cases. While not a replacement for professional medical advice, it provides valuable insights to help you understand your health better.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Secure & Private</h4>
+                            <p>Your health data is encrypted and never shared</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Instant Results</h4>
+                            <p>Get predictions in seconds, not hours</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Trusted by Millions</h4>
+                            <p>Used by healthcare providers worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HealthPredict AI</h3>
+                    <p>Empowering healthcare through artificial intelligence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#predict">Predict</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@healthpredict.ai</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HealthPredict AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
