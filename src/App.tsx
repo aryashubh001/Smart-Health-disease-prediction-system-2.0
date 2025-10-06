@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { LandingPage } from './components/LandingPage';
 import { DiseasePrediction } from './components/DiseasePrediction';
 import { Reports } from './components/Reports';
