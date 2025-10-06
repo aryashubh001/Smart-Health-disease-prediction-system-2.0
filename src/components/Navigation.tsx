@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
 import { useTheme } from '../App';
 import { Activity, Sun, Moon, Menu } from 'lucide-react';
