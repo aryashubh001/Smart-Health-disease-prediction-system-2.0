@@ -1,111 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HealthPredict AI</title>
-  <link rel="stylesheet" href="src/css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">HealthPredict AI</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#predict">Predict</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-glow"></div>
-    <div class="ai-orb">
-      <i class="fas fa-brain"></i>
-      <div class="pulse"></div>
-    </div>
-
-    <div class="hero-content">
-      <h1>Your AI Health Companion</h1>
-      <p>Get instant AI-powered health insights from medical data. Trusted by patients, doctors, and researchers.</p>
-
-      <div class="stats">
-        <div>
-          <strong>10,000+</strong>
-          <span>Users Helped</span>
-        </div>
-        <div>
-          <strong>95%</strong>
-          <span>AI Accuracy</span>
-        </div>
-        <div>
-          <strong>24/7</strong>
-          <span>Available</span>
-        </div>
-        <div>
-          <strong>100%</strong>
-          <span>Secure</span>
-        </div>
-      </div>
-
-      <button class="cta-glow" onclick="scrollToPredict()">Start Health Check</button>
-    </div>
-  </section>
-
-  <!-- Prediction Section -->
-  <section id="predict" class="predict-section">
-    <div class="glass-card">
-      <h2>Symptom Checker</h2>
-      <p>Select your symptoms and get AI-powered predictions instantly.</p>
-
-      <form id="predictionForm">
-        <div class="form-row">
-          <input type="number" id="age" name="age" min="1" max="120" placeholder="Age" required />
-          <select id="gender" name="gender" required>
-            <option value="" disabled selected>Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <label>Select Symptoms</label>
-        <div class="symptoms-grid">
-          <div class="symptom-item"><input type="checkbox" value="fever" /> Fever</div>
-          <div class="symptom-item"><input type="checkbox" value="cough" /> Cough</div>
-          <div class="symptom-item"><input type="checkbox" value="headache" /> Headache</div>
-          <div class="symptom-item"><input type="checkbox" value="fatigue" /> Fatigue</div>
-          <div class="symptom-item"><input type="checkbox" value="nausea" /> Nausea</div>
-          <div class="symptom-item"><input type="checkbox" value="breathing" /> Breathing Issues</div>
-          <div class="symptom-item"><input type="checkbox" value="chest-pain" /> Chest Pain</div>
-          <div class="symptom-item"><input type="checkbox" value="stomach-pain" /> Stomach Pain</div>
-        </div>
-
-        <textarea placeholder="Describe your symptoms in detail..." rows="4"></textarea>
-
-        <button type="submit" class="predict-glow">Predict Disease</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Results Section -->
-  <section id="results" class="results-section" style="display: none;">
-    <div class="glass-card">
-      <h2>Prediction Results</h2>
-      <div id="resultsGrid" class="results-grid"></div>
-      <div class="recommendations">
-        <h3>Recommendations</h3>
-        <ul id="recommendationsList"></ul>
-      </div>
-      <button class="cta-glow" onclick="resetForm()">Check Again</button>
-    </div>
-  </section>
-
-  <script src="src/js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Health AI 2.0</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
