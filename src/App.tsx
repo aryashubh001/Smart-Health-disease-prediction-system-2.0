@@ -41,7 +41,7 @@ export default function App() {
     switch (currentPage) {
       case 'landing': return <motion.div key="landing" {...pageProps}><LandingPage onNavigate={setCurrentPage} /></motion.div>;
       case 'predict': return <motion.div key="predict" {...pageProps}><DiseasePrediction /></motion.div>;
-      case 'reports': return <motion.div key="reports" {...pageProps}><Reports /></ /></motion.div>;
+      <motion.div key="reports" {...pageProps}><Reports /></motion.div>
       case 'about': return <motion.div key="about" {...pageProps}><AboutUs /></motion.div>;
       default: return <motion.div key="landing" {...pageProps}><LandingPage onNavigate={setCurrentPage} /></motion.div>;
     }
