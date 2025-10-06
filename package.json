@@ -26,4 +26,9 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   }
+"dependencies": {
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "framer-motion": "^11.0.0",
+  "lucide-react": "^0.263.1"
 }
