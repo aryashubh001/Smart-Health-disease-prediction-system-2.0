@@ -15,6 +15,14 @@ import {
   CheckCircle
 } from 'lucide-react';
 
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  CardDescription
+} from '../ui/card';
+
 type Page = 'landing' | 'predict' | 'reports' | 'about';
 
 interface LandingPageProps {
