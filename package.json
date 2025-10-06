@@ -1,8 +1,9 @@
 {
-  "name": "smart-health-2",
+  "name": "Smart-Health-disease-prediction-system",
   "private": true,
   "version": "2.0.0",
   "type": "module",
+  "homepage": "https://aryashubh001.github.io/Smart-Health-disease-prediction-system",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,7 +13,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "motion": "^10.18.0",
+    "framer-motion": "^11.0.0",
     "lucide-react": "^0.263.1"
   },
   "devDependencies": {
@@ -26,9 +27,4 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   }
-"dependencies": {
-  "react": "^18.3.1",
-  "react-dom": "^18.3.1",
-  "framer-motion": "^11.0.0",
-  "lucide-react": "^0.263.1"
 }
