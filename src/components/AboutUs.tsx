@@ -63,28 +63,28 @@ export function AboutUs() {
 
   const teamMembers = [
     {
-      name: 'Dr. Sarah Johnson',
-      role: 'Chief Medical Officer',
+      name: 'Shubh Arya',
+      /*role: 'Chief Medical Officer',
       image: '/images/dr1.jpeg',
-      bio: 'Board-certified physician with 15+ years in digital health and AI applications in medicine.'
+      bio: 'Board-certified physician with 15+ years in digital health and AI applications in medicine.'*/
     },
     {
-      name: 'Alex Chen',
-      role: 'Head of AI Research',
+      name: 'Tushar',
+     /* role: 'Head of AI Research',
       image: '/images/dr2.jpeg',
-      bio: 'PhD in Machine Learning with expertise in medical image analysis and predictive modeling.'
+      bio: 'PhD in Machine Learning with expertise in medical image analysis and predictive modeling.'*/
     },
     {
-      name: 'Dr. Priya Patel',
-      role: 'Dermatology Advisor',
+      name: 'Rishabh',
+     /* role: 'Dermatology Advisor',
       image: '/images/dr4.png',
-      bio: 'Dermatologist specializing in AI-assisted skin condition diagnosis and treatment protocols.'
+      bio: 'Dermatologist specializing in AI-assisted skin condition diagnosis and treatment protocols.'*/
     },
     {
-      name: 'Michael Rodriguez',
-      role: 'Data Science Lead',
+      name: 'Uttam',
+      /*role: 'Data Science Lead',
       image: '/images/dsl.jpeg',
-      bio: 'Expert in healthcare data analytics with focus on bias reduction and model interpretability.'
+      bio: 'Expert in healthcare data analytics with focus on bias reduction and model interpretability.'*/
     }
   ];
 
