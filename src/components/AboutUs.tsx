@@ -64,27 +64,27 @@ export function AboutUs() {
   const teamMembers = [
     {
       name: 'Shubh Arya',
-      /*role: 'Chief Medical Officer',
+      role: 'Chief Medical Officer',
       image: '/images/dr1.jpeg',
-      bio: 'Board-certified physician with 15+ years in digital health and AI applications in medicine.'*/
+      bio: 'Board-certified physician with 15+ years in digital health and AI applications in medicine.'
     },
     {
       name: 'Tushar',
-     /* role: 'Head of AI Research',
+      role: 'Head of AI Research',
       image: '/images/dr2.jpeg',
-      bio: 'PhD in Machine Learning with expertise in medical image analysis and predictive modeling.'*/
+      bio: 'PhD in Machine Learning with expertise in medical image analysis and predictive modeling.'
     },
     {
       name: 'Rishabh',
-     /* role: 'Dermatology Advisor',
+      role: 'Dermatology Advisor',
       image: '/images/dr4.png',
-      bio: 'Dermatologist specializing in AI-assisted skin condition diagnosis and treatment protocols.'*/
+      bio: 'Dermatologist specializing in AI-assisted skin condition diagnosis and treatment protocols.'
     },
     {
       name: 'Uttam',
-      /*role: 'Data Science Lead',
+      role: 'Data Science Lead',
       image: '/images/dsl.jpeg',
-      bio: 'Expert in healthcare data analytics with focus on bias reduction and model interpretability.'*/
+      bio: 'Expert in healthcare data analytics with focus on bias reduction and model interpretability.'
     }
   ];
 
